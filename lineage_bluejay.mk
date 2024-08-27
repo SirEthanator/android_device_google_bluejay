@@ -46,6 +46,10 @@ RISING_MAINTAINER=EliteDarkKaiser
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     RISING_CHIPSET="Google Tensor G1" \
+    
+# Use Scudo instead of Jemalloc
+PRODUCT_USE_SCUDO := true
+PRODUCT_USE_SCUDO_32_BIT := true
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
