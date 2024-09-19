@@ -29,3 +29,15 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/bluejay/bluejay:14/AP2A.240905.003.F1/12235381:user/release-keys
 
 $(call inherit-product, vendor/google/bluejay/bluejay-vendor.mk)
+
+# Everest flags
+EVEREST_MAINTAINER := "SirEthanator"
+
+TARGET_SUPPORTS_BLUR := true
+
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+
+WITH_GAPPS := true
+
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
