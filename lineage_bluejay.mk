@@ -42,5 +42,3 @@ WITH_GAPPS := true
 
 TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
 
-# Signing
--include vendor/lineage-priv/keys/keys.mk
