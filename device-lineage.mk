@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Disable Artifact Requirements
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
@@ -21,6 +24,25 @@ PRODUCT_PACKAGES := \
 
 # Kernel
 TARGET_PREBUILT_KERNEL := device/google/bluejay-kernel/Image.lz4
+
+# Face unlock and PixelParts
+include vendor/google/faceunlock/device.mk
+include packages/apps/PixelParts/device.mk
+
+# Sigmadroid flags
+SIGMA_BUILD_TYPE := UNOFFICIAL
+SIGMA_MAINTAINER := SirEthanator
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+TARGET_IS_PIXEL := true
+
+# GAPPS
+WITH_GAPPS := true
+WITH_GMS := true
+BUILD_GMS_OVERLAYS_AND_PROPS := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
 
 # Build necessary packages for vendor
 

@@ -16,7 +16,7 @@ $(call inherit-product, device/google/bluejay/device-lineage.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6a
-PRODUCT_NAME := lineage_bluejay
+PRODUCT_NAME := sigma_bluejay
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
