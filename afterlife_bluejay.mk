@@ -33,3 +33,12 @@ $(call inherit-product, vendor/google/bluejay/bluejay-vendor.mk)
 # Afterlife flags
 AFTERLIFE_GAPPS := true
 AFTERLIFE_MAINTAINER := SirEthanator
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Offline charging
+USE_PIXEL_CHARGING := true
+
+# Face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
