@@ -40,5 +40,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Offline charging
 USE_PIXEL_CHARGING := true
 
+# Blur support
+TARGET_SUPPORTS_BLUR := true
+
 # Face unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
