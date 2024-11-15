@@ -4,9 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Lineage stuff.
+# Inherit some common Afterlife stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/bluejay/aosp_bluejay.mk)
@@ -16,7 +16,7 @@ $(call inherit-product, device/google/bluejay/device-lineage.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6a
-PRODUCT_NAME := lineage_bluejay
+PRODUCT_NAME := afterlife_bluejay
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
@@ -30,15 +30,6 @@ BUILD_FINGERPRINT := google/bluejay/bluejay:14/AP2A.240905.003.F1/12235381:user/
 
 $(call inherit-product, vendor/google/bluejay/bluejay-vendor.mk)
 
-# Everest flags
-EVEREST_MAINTAINER := "SirEthanator"
-
-TARGET_SUPPORTS_BLUR := true
-
-TARGET_HAS_UDFPS := true
-EXTRA_UDFPS_ANIMATIONS := true
-
-WITH_GAPPS := true
-
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-
+# Afterlife flags
+AFTERLIFE_GAPPS := true
+AFTERLIFE_MAINTAINER := SirEthanator
