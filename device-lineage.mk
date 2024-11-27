@@ -7,6 +7,9 @@
 # Scudo
 PRODUCT_USE_SCUDO := true
 
+# Ignore missing modules
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
 # Disable Artifact Requirements
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
