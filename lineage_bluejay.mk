@@ -21,6 +21,32 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6a
 PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 
+# Ship Basic Call Recorder
+$(call inherit-product, vendor/bcr/bcr.mk)
+
+# Addons
+TARGET_HAS_UDFPS := true
+
+# Gms 
+WITH_GMS := true
+
+# Ship Pixel Launcher
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+
+# Ship Google Camera
+TARGET_PREBUILT_GOOGLE_CAMERA := true
+
+# Lawnchair Prebuilt
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+
+# disable/enable blur support, default is false
+TARGET_ENABLE_BLUR := true
+
+RISING_MAINTAINER=EliteDarkKaiser
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RISING_CHIPSET="Google Tensor G1" \
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
