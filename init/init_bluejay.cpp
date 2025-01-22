@@ -33,6 +33,6 @@ void OverrideProperty(const char* name, const char* value) {
  * after the original property has been set.
  */
 void vendor_load_properties() {
-    OverrideProperty("ro.rising.chipset", "Google Tensor G1");
+    OverrideProperty("ro.rising.chipset", "Google Tensor");
     OverrideProperty("ro.rising.maintainer", "EliteDarkKaiser");
 }
