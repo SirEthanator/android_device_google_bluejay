@@ -21,9 +21,6 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6a
 PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 
-# Ship Basic Call Recorder
-$(call inherit-product, vendor/bcr/bcr.mk)
-
 # Addons
 TARGET_HAS_UDFPS := true
 
@@ -36,17 +33,14 @@ TARGET_DEFAULT_PIXEL_LAUNCHER := true
 # Ship Google Camera
 TARGET_PREBUILT_GOOGLE_CAMERA := true
 
-# Lawnchair Prebuilt
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-
 # disable/enable blur support, default is false
 TARGET_ENABLE_BLUR := true
 
-RISING_MAINTAINER=EliteDarkKaiser
+RISING_MAINTAINER=SirEthanator
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     RISING_CHIPSET="Google Tensor" \
-    
+
 # Use Scudo instead of Jemalloc
 PRODUCT_USE_SCUDO := true
 PRODUCT_USE_SCUDO_32_BIT := true
