@@ -16,4 +16,11 @@
 
 <resources>
     <integer name="config_fingerprintMaxTemplatesPerUser">4</integer>
+
+    <!-- The properties of a UDFPS sensor in pixels -->
+    <integer-array name="config_udfps_sensor_props">
+      <item>540</item>  <!-- sensorLocationX -->
+      <item>1717</item> <!-- sensorLocationY -->
+      <item>113</item>  <!-- sensorRadius -->
+    </integer-array>
 </resources>
