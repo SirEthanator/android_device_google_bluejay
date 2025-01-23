@@ -17,9 +17,6 @@ PRODUCT_COPY_FILES += \
 # PixelParts (HBM)
 include packages/apps/PixelParts/device.mk
 
-# Viper4Android FX
-include packages/apps/ViPER4AndroidFX/config.mk
-
 # Build necessary packages for vendor
 
 # Codec2
