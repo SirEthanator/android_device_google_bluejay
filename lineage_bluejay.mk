@@ -36,10 +36,8 @@ TARGET_PREBUILT_GOOGLE_CAMERA := true
 # disable/enable blur support, default is false
 TARGET_ENABLE_BLUR := true
 
+# Set maintainer name
 RISING_MAINTAINER=SirEthanator
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RISING_CHIPSET="Google Tensor" \
 
 # Use Scudo instead of Jemalloc
 PRODUCT_USE_SCUDO := true
